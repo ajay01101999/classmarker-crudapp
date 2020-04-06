@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="./js/models/questions.js"></script>
+    <script src="./js/models/questionoperation.js"></script>
+    <script src="./js/controller/ctrl.js"></script>
+</head>
+<body>
+    <div class="container mw-100">
+        <h1 class="alert alert-primary text-center border border-primary text-dark">QUESTION FOR STUDENTS</h1>
+        <label>ID</label>
+        <input id="id" type="text" placeholder="TYPE QUESTION ID" class="form-control" value="0"><br>
+        <label>NAME</label>
+        <textarea name="" id="name" cols="30" rows="5" placeholder="TYPE QUESTION ID HERE" class="form-control">1</textarea><br>
+        <label>OPTION A</label>
+        <input type="text" id="a" placeholder="ENTER OPTION A" class="form-control" value="2"><br>
+        <label>OPTION B</label>
+        <input type="text" id="b" placeholder="ENTER OPTION B" class="form-control" value="3"><br>
+        <label>OPTION C</label>
+        <input type="text" id="c" placeholder="ENTER OPTION C" class="form-control" value="4"><br>
+        <label>OPTION D</label>
+        <input type="text" id="d" placeholder="ENTER OPTION D" class="form-control" value="5"><br>
+        <label>CORRECT ANS</label>
+        <input type="text" id="ans" placeholder="ENTER CORRECT ANSWER"class="form-control" value="6"><br>
+        <labeL>SCORE</label>
+        <input type="range" name="" id="score" class="form-control" min="1" max="10" value="1"><br>
+        <div class='form-group'>
+            <button id='add' class='btn btn-primary'>Add</button>
+            <button id='delete' class='btn btn-danger'>Delete</button>
+            <button class='btn btn-info'>Search</button>
+            <button class='btn btn-secondary'>Update</button>
+            <button class='btn btn-success' id='save'>Save</button>
+            <button class='btn btn-warning' id='load'>Load</button>
+            <button class='btn btn-secondary'>Clear All</button>
+            <button class='btn btn-info'>Sort</button>
+            <button class='btn btn-success'>Save to Server</button>
+            <button class='btn btn-secondary'>Fetch From Server</button>
+        </div>
+        <br>
+        <h1 id="records" class="text-center alert-secondary border border-secondary">TOTAL QUESTIONS ADDED <span id="total"> </span></h1>
+        <table class="table table-bordered text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>OPTION A</th>
+                    <th>OPTION B</th>
+                    <th>OPTION C</th>
+                    <th>OPTION D</th>
+                    <th>RANS</th>
+                    <th>SCORE</th>
+                </tr>  
+            </thead>
+            <tbody id="questions">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
